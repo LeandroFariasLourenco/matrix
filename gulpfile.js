@@ -66,5 +66,5 @@ gulp.task("remove" , _ => (
   .pipe(clean())
 ))
 
-gulp.task("default" , gulp.series("pug" , "scss" , "js"))
-gulp.task("dev" , gulp.parallel("default", "watch" , "browser"))
+gulp.task("default" , gulp.series("remove" , "pug" , "scss" , "js"))
+gulp.task("dev" , gulp.parallel("default" , "watch" , "browser"))

@@ -1,5 +1,5 @@
-import Mainpage from './main';
+import Methods from './main.js';
 
 document.addEventListener("DOMContentLoaded", _ => {
-  Mainpage.init();
+  Methods.init();
 })
