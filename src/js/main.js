@@ -27,9 +27,6 @@ const Methods = {
       _props.letters.map(function (_positionY, _index) {
         const text = String.fromCharCode(48 + Math.random() * 33);
         const positionX = _index * 10;
-        if(_index === 0) {
-          console.log(_positionY , _index);
-        }
         _props.canvas.getContext('2d').fillText(text, positionX, _positionY );
         _props.letters[_index] = (_positionY > 758 * Math.random() * 164) ? 0 : _positionY + 10;
       })
